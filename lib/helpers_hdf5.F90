@@ -622,7 +622,7 @@ contains
         
     call h5tcopy_f(atype, memtype, error)
     
-    f_ptr = c_loc(str_array)
+    !f_ptr = c_loc(str_array)
     call h5aread_f(attr_id, memtype, f_ptr, error)
 
     call h5sclose_f(aspace, error)
